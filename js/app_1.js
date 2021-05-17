@@ -7,7 +7,7 @@ var tbody = d3.select("tbody");
 // Create a new function 
 function buildTable(data) {
     // Clear the existing data to create a fresh table
-    tbody.html("");
+    tbody.html_1("");
 
 
     // loop through each object in the array
@@ -48,7 +48,7 @@ function handleClick() {
     buildTable(filteredData);
   };
 // Attach an event to listen for the form button
-d3.selectAll("#filter-btn").on("click", handleClick);
+d3.selectAll("filter-btn").on("click", handleClick);
 
 // Build the table when the page loads
 buildTable(tableData);
